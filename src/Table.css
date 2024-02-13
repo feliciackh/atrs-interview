@@ -1,0 +1,17 @@
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 60%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th:hover {
+  cursor: pointer;
+  background-color: rgb(234, 230, 230);
+}
