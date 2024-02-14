@@ -67,7 +67,7 @@ describe("GIVEN financial instruments table", () => {
             expect(screen.getByText(item.ticker)).toBeInTheDocument();
           });
         },
-        { timeout: 4000 }
+        { timeout: 4000 },
       );
     });
   });
@@ -88,7 +88,7 @@ describe("GIVEN financial instruments table", () => {
           expect(commoditiesRow).toHaveStyle("background-color: white");
           expect(creditRow).toHaveStyle("background-color: lightgreen");
         },
-        { timeout: 4000 }
+        { timeout: 4000 },
       );
     });
 
@@ -105,7 +105,7 @@ describe("GIVEN financial instruments table", () => {
           const negativeCell = getByText("-42.1");
           expect(negativeCell).toHaveStyle("color: red");
         },
-        { timeout: 4000 }
+        { timeout: 4000 },
       );
     });
   });

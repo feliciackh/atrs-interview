@@ -1,4 +1,3 @@
-
 export interface Item {
   ticker: string;
   price: number;
@@ -30,7 +29,7 @@ export const sortByColumn = (data: Item[], column: SortBy) => {
     case "ticker":
       // sort: alphabetical order
       const tickerSorted = [...data].sort((a, b) =>
-        a[column].localeCompare(b[column])
+        a[column].localeCompare(b[column]),
       );
 
       return tickerSorted;
@@ -54,6 +53,6 @@ export const getAssetColor = (asset: "Commodities" | "Equities" | "Credit") => {
   return asset === "Equities"
     ? "lightblue"
     : asset === "Credit"
-    ? "lightgreen"
-    : "white";
+      ? "lightgreen"
+      : "white";
 };
